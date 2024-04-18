@@ -1,9 +1,11 @@
 :root{
-  --main-color:#2C3691;
+  --color-blue-icon:#2c3691;
   --color-white:white;
   --color-black: black;
-  --secondary-color:black;
-  --alternative-color:red;
+  --pantone-a: rgb(54,167,170);
+  --pantone-b: rgb(164,208,209);
+  --pantone-c: rgb(142,141,152);
+  --pantone-d: rgb(194,190,192);
 }
 /*--------------------------------------------------------------
 # General
@@ -517,7 +519,7 @@ h6 {
 
 .hero .carousel {
   width: 100%;
-  min-height: 85vh;
+  min-height: 87vh;
   padding: 80px 0;
   margin: 0;
   position: relative;
