@@ -121,15 +121,15 @@ h6 {
   padding: 15px 0;
 }
 
-#header .logo {
-  /* font-size: 32px;
+/* #header .logo {
+  font-size: 32px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 400;
   letter-spacing: 2px;
-  text-transform: uppercase; */
-}
+  text-transform: uppercase;
+} */
 
 /* #header .logo a {
   color: var(--color-black);
@@ -512,11 +512,12 @@ h6 {
 .hero {
   overflow-x: hidden;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .hero .carousel {
   width: 100%;
-  min-height: 100vh;
+  min-height: 85vh;
   padding: 80px 0;
   margin: 0;
   position: relative;
