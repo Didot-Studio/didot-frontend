@@ -244,7 +244,9 @@
    * Initiate Pure Counter 
    */
   new PureCounter();
-
+ /**
+   * Dynamic year for footer 
+   */
   var currentYear = new Date().getFullYear();
   var copyrightElement = document.getElementById("copyright");
   if (copyrightElement) {

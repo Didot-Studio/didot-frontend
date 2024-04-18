@@ -21,7 +21,7 @@ a {
 }
 
 a:hover {
-  color: #51cdbe;
+  color: var(--pantone-a);
   text-decoration: none;
 }
 
@@ -63,7 +63,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #34b7a7;
+  border: 6px solid var(--color-blue-icon);
   border-top-color: #dcf5f2;
   border-radius: 50%;
   width: 60px;
@@ -538,7 +538,7 @@ h6 {
 
 .hero .carousel-item::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.481);
+  background-color: rgba(0, 0, 0, 0.261);
   position: absolute;
   inset: 0;
 }
@@ -1432,7 +1432,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #e9e8e6;
+  background: var(--color-white);
   padding: 30px 0;
   color: #222222;
   font-size: 14px;
