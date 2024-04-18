@@ -122,21 +122,21 @@ h6 {
 }
 
 #header .logo {
-  font-size: 32px;
+  /* font-size: 32px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 400;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: uppercase; */
 }
 
-#header .logo a {
-  color: #222222;
-}
+/* #header .logo a {
+  color: var(--color-black);
+} */
 
 #header .logo img {
-  max-height: 40px;
+  max-height: 90px;
 }
 
 @media (max-width: 992px) {
