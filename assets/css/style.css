@@ -107,7 +107,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: var(--pantone-a);
+  background: var(--pantone-d);
   color: #fff;
 }
 
@@ -430,6 +430,7 @@ h6 {
   color: white;
   z-index: 9999;
   font-size: 200px;
+  font-family: 'Regular', fallback;
 }
 .hero {
   overflow-x: hidden;
