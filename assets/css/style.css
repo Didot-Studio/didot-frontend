@@ -160,7 +160,7 @@ h6 {
   display: inline-block;
   line-height: 0px;
   transition: 0.3s;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .header-social-links a:hover {
@@ -196,7 +196,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   font-family: "Raleway", sans-serif;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   color: var(--color-black);
   white-space: nowrap;
