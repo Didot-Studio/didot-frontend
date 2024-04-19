@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Bold';
+    src: url('../font/AkzidenzGroteskBE-Bold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'BoldCn';
+    src: url('../font/AkzidenzGroteskBE-BoldCn.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'BoldEx';
+    src: url('../font/AkzidenzGroteskBE-BoldEx.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'BoldExIt';
+    src: url('../font/AkzidenzGroteskBE-BoldExIt.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'BoldIt';
+    src: url('../font/AkzidenzGroteskBE-BoldIt.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'Cn';
+    src: url('../font/AkzidenzGroteskBE-Cn.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'Ex';
+    src: url('../font/AkzidenzGroteskBE-Ex.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'It';
+    src: url('../font/AkzidenzGroteskBE-It.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'Light';
+    src: url('../font/AkzidenzGroteskBE-Light.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'LightCn';
+    src: url('../font/AkzidenzGroteskBE-LightCn.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'LightEx';
+    src: url('../font/AkzidenzGroteskBE-LightEx.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'LightOsF';
+    src: url('../font/AkzidenzGroteskBE-LightOsF.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'Md';
+    src: url('../font/AkzidenzGroteskBE-Md.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'MdEx';
+    src: url('../font/AkzidenzGroteskBE-MdEx.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'MdIt';
+    src: url('../font/AkzidenzGroteskBE-MdIt.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'Regular';
+    src: url('../font/AkzidenzGroteskBE-Regular.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Super';
+    src: url('../font/AkzidenzGroteskBE-Super.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'XBd';
+    src: url('../font/AkzidenzGroteskBE-XBd.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'XBdCn';
+    src: url('../font/AkzidenzGroteskBE-XBdCn.otf') format('otf');
+  }
+  @font-face {
+    font-family: 'XBdCnIt';
+    src: url('../font/AkzidenzGroteskBE-XBdCnIt.otf') format('otf');
+  }

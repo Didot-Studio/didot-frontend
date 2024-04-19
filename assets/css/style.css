@@ -1,3 +1,4 @@
+@import url('fonts.css');
 :root{
   --color-blue-icon:#2c3691;
   --color-white:white;
@@ -7,11 +8,12 @@
   --pantone-c: rgb(142,141,152);
   --pantone-d: rgb(194,190,192);
 }
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Regular', fallback;
   color: var(--color-black);
 }
 
@@ -31,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Regular', fallback;
 }
 
 #main {
@@ -164,7 +166,7 @@ h6 {
 }
 
 .header-social-links a:hover {
-  color: var(--pantone-a);
+  color: var(--pantone-d);
 }
 
 /*--------------------------------------------------------------
@@ -195,7 +197,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Regular', fallback;
   font-size: 14px;
   font-weight: 600;
   color: var(--color-black);
@@ -211,7 +213,7 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar>ul>li>a:before {
+/* .navbar>ul>li>a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -222,7 +224,7 @@ h6 {
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
-}
+} */
 
 .navbar a:hover:before,
 .navbar li:hover>a:before,
@@ -235,7 +237,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: var(--color-black);
+  color: var(--pantone-d);
 }
 
 .navbar .dropdown ul {
@@ -507,7 +509,7 @@ h6 {
 }
 
 .hero .info .btn-contact {
-  font-family: var(--font-primary);
+  font-family: 'Regular', fallback;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -635,7 +637,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Regular', fallback;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -693,7 +695,7 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-/* .services .icon-box {
+.services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
@@ -819,7 +821,7 @@ section {
 }
 
 
- */
+ 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
