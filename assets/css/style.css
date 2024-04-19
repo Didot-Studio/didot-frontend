@@ -12,7 +12,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: var(--color-black);
 }
 
 a {
@@ -63,8 +63,8 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid var(--color-blue-icon);
-  border-top-color: #dcf5f2;
+  border: 6px solid var(--color-black);
+  border-top-color: var(--pantone-a);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -138,7 +138,8 @@ h6 {
 } */
 
 #header .logo img {
-  max-height: 90px;
+  padding-top: 14px;
+  max-height: 120px;
 }
 
 @media (max-width: 992px) {
@@ -151,16 +152,16 @@ h6 {
 # Header Social Links
 --------------------------------------------------------------*/
 .header-social-links {
-  padding-right: 15px;
+  padding-right: 25px;
 }
 
 .header-social-links a {
   color: var(--color-black);
-  padding-left: 6px;
+  padding-left: 10px;
   display: inline-block;
   line-height: 0px;
   transition: 0.3s;
-  font-size: 16px;
+  font-size: 28px;
 }
 
 .header-social-links a:hover {
@@ -196,7 +197,7 @@ h6 {
   align-items: center;
   justify-content: space-between;
   font-family: "Raleway", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
   color: var(--color-black);
   white-space: nowrap;
@@ -309,7 +310,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #222222;
+  color: var(--color-black);
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -318,7 +319,7 @@ h6 {
 }
 
 .mobile-nav-toggle.bi-x {
-  color: #fff;
+  color: var(--color-white);
 }
 
 @media (max-width: 991px) {
@@ -338,7 +339,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgb(9, 9, 9);
+  background: rgba(10, 10, 10, 0.5);
   transition: 0.3s;
   z-index: 999;
 }
@@ -353,12 +354,12 @@ h6 {
   display: block;
   position: absolute;
   top: 55px;
-  right: 15px;
-  bottom: 15px;
-  left: 15px;
+  right: 55px;
+  bottom: 55px;
+  left: 55px;
   padding: 10px 0;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: var(--color-white);
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -367,13 +368,13 @@ h6 {
 .navbar-mobile a:focus {
   font-size: 15px;
   padding-right: 15px;
-  color: #222222;
+  color: var(--color-black);
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #34b7a7;
+  color: var(--pantone-a);
 }
 
 .navbar-mobile .getstarted,
@@ -408,7 +409,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: #34b7a7;
+  color: var(--pantone-a);
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -420,14 +421,15 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-/* #hero h1{
+#hero h1{
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
+  top: 20%;
+  right: 20%;
+  left: 20%;
   color: white;
   z-index: 9999;
-} */
+  font-size: 200px;
+}
 .hero {
   overflow-x: hidden;
   padding: 0;
@@ -436,8 +438,8 @@ h6 {
 
 .hero .carousel {
   width: 100%;
-  min-height: 87vh;
-  padding: 80px 0;
+  min-height: 91vh;
+  padding: 90px 0;
   margin: 0;
   position: relative;
 }
