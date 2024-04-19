@@ -120,7 +120,6 @@ h6 {
 #header {
   background: var(--color-white);
   z-index: 997;
-  padding: 15px 0;
 }
 
 /* #header .logo {
@@ -438,7 +437,7 @@ h6 {
 
 .hero .carousel {
   width: 100%;
-  min-height: 91vh;
+  min-height: 90vh;
   padding: 90px 0;
   margin: 0;
   position: relative;
