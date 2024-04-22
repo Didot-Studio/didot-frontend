@@ -1,13 +1,15 @@
 @import url('fonts.css');
-:root{
+@import url('colors.css');
+/* :root{
   --color-blue-icon:#2c3691;
   --color-white:white;
-  --color-black: black;
+  --color-black: rgb(35,31,32);
+  --color-primary: rgb(0,138,138);
   --pantone-a: rgb(54,167,170);
   --pantone-b: rgb(164,208,209);
   --pantone-c: rgb(142,141,152);
   --pantone-d: rgb(194,190,192);
-}
+} */
 
 /*--------------------------------------------------------------
 # General
@@ -18,12 +20,12 @@ body {
 }
 
 a {
-  color: #34b7a7;
+  color: var(--color-black);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--pantone-a);
+  color: var(--pantone-d);
   text-decoration: none;
 }
 
@@ -86,7 +88,7 @@ h6 {
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
-.back-to-top {
+/* .back-to-top {
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -114,7 +116,7 @@ h6 {
 .back-to-top.active {
   visibility: visible;
   opacity: 1;
-}
+} */
 
 /*--------------------------------------------------------------
 # Header
@@ -220,7 +222,7 @@ h6 {
   height: 2px;
   bottom: -5px;
   left: 0;
-  background-color: var(--pantone-a);
+  background-color: var( --color-primary);
   visibility: hidden;
   width: 0px;
   transition: all 0.3s ease-in-out 0s;
@@ -275,7 +277,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-  color: var(--pantone-a);
+  color: var( --color-primary);
 }
 
 .navbar .dropdown:hover>ul {
@@ -375,7 +377,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: var(--pantone-a);
+  color: var( --color-primary);
 }
 
 .navbar-mobile .getstarted,
@@ -410,7 +412,7 @@ h6 {
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: var(--pantone-a);
+  color: var( --color-primary);
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -719,3 +721,80 @@ section {
   background: var(--color-black) ; 
 } */
  
+#back-to-top {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden
+}
+
+#back-to-top .btt-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: all .35s cubic-bezier(.72,.1,0,.99);
+  -moz-transition: all .35s cubic-bezier(.72,.1,0,.99);
+  transition: all .35s cubic-bezier(.72,.1,0,.99)
+}
+
+#back-to-top .btt-icon {
+  font-size: 30px
+}
+
+#back-to-top .btt-icon:last-of-type {
+  position: absolute;
+  top: 100%;
+  text-align: center;
+  left: 1px
+}
+
+#back-to-top .btt-text {
+  display: block;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  margin: 12px 0 18px;
+  font-size: 12px
+}
+
+#back-to-top.on {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: opacity .3s ease;
+  -moz-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+
+#back-to-top.on .btt-inner {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  transform: translateY(0);
+}
+
+#back-to-top:hover .btt-inner {
+  -webkit-transform: translateY(-40px);
+  -moz-transform: translateY(-40px);
+  transform: translateY(-40px)
+}
+
+.icon-arrows-slim-up:before {
+  content: "\e06a";
+}
+
+[class^="icon-arrows-"]:before,
+[class*=" icon-arrows-"]:before {
+  font-family: "linea-arrows-10" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

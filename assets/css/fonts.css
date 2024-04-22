@@ -77,4 +77,12 @@
   @font-face {
     font-family: 'XBdCnIt';
     src: url('../font/AkzidenzGroteskBE-XBdCnIt.otf') format('otf');
+    
+  }
+
+  @font-face {
+    font-family: "linea-arrows-10";
+    src: url("../font/linea-arrows-10.woff");  
+    font-weight: normal;
+    font-style: normal;
   }

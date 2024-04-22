@@ -1,13 +1,5 @@
 @import url('fonts.css');
-:root{
-  --color-blue-icon:#2c3691;
-  --color-white:white;
-  --color-black: black;
-  --pantone-a: rgb(54,167,170);
-  --pantone-b: rgb(164,208,209);
-  --pantone-c: rgb(142,141,152);
-  --pantone-d: rgb(194,190,192);
-}
+@import url('colors.css');
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
