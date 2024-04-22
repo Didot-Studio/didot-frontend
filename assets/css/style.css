@@ -750,7 +750,8 @@ section {
   -moz-transform: rotate(-90deg);
   transform: rotate(-90deg);
   margin: 12px 0 18px;
-  font-size: 12px
+  font-size: 16px;
+  font-family: 'Regular', fallback;
 }
 
 #back-to-top.on {
