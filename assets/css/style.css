@@ -9,6 +9,7 @@ body {
 }
 
 a {
+  font-family: 'Regular', fallback;
   color: var(--color-black);
   text-decoration: none;
 }
