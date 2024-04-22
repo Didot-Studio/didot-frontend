@@ -695,6 +695,28 @@ section {
 
 
 
+/* scrollbar custom */
+::-webkit-scrollbar {
+  background: var(--color-white);
+  border-left: 1px solid var(--pantone-d);
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-white);
+
+}
+::-webkit-scrollbar-corner {
+  background: var(--color-white);
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--pantone-d);
+  border-radius: 8px;
+}
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-black) ; 
+} */
  
 /*--------------------------------------------------------------
 # Hero Section
