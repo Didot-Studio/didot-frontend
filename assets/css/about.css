@@ -22,6 +22,10 @@
   font-weight: 100;
   font-style: normal;
 }
+h3{
+  text-align: center;
+  font-family: "Regular", fallback;
+}
 .about p {
   text-align: center;
   font-family: "Regular", fallback;
@@ -31,6 +35,7 @@
   font-weight: 700;
   font-size: 26px;
   color: var(--color-black);
+  text-align: center;
 }
 
 .about .content ul {
