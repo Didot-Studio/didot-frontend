@@ -49,7 +49,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #000000;
+  background: var(--color-white);
 }
 
 #preloader:before {
@@ -57,7 +57,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 2px solid var(--color-white);
+  border: 2px solid var(--color-black);
   border-top-color: var(--pantone-d);
   border-radius: 50%;
   width: 60px;
