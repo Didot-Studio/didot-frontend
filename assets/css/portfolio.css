@@ -155,7 +155,7 @@
     padding: 30px;
     box-shadow: 0px 0 30px var(--color-black);
     background-color: var(--pantone-b);
-    border-radius: 5%;
+    border-radius: 25px;
   }
   
   .portfolio-details .portfolio-info h3 {
