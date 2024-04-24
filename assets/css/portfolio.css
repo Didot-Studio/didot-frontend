@@ -153,10 +153,10 @@
   
   .portfolio-details .portfolio-info {
     padding: 30px;
-    box-shadow: 0px 0 30px var(--color-black);
-    background-color: var(--pantone-b);
-    border-radius: 25px;
-    border: 2px solid var(--pantone-c);
+    box-shadow: 10px 10px 10px 0px rgba(34, 34, 34, 0.500);
+    background-color: #f5f5f5;
+    /* border-radius: 25px; */
+    /* border: 2px solid var(--pantone-c); */
   }
   
   .portfolio-details .portfolio-info h3 {
