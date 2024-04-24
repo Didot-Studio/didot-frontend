@@ -62,25 +62,25 @@
 }
 
 .services .iconbox-blue:hover .icon path {
-  fill: #47aeff;
+  fill: var(--pantone-c);
 }
 
 .services .iconbox-orange:hover .icon path {
-  fill: #ffa76e;
+  fill:var(--pantone-c);
 }
 
 .services .iconbox-pink:hover .icon path {
-  fill: #e80368;
+  fill: var(--pantone-c);
 }
 
 .services .iconbox-yellow:hover .icon path {
-  fill: #ffbb2c;
+  fill: var(--pantone-c);
 }
 
 .services .iconbox-red:hover .icon path {
-  fill: #ff5828;
+  fill: var(--pantone-c);
 }
 
 .services .iconbox-teal:hover .icon path {
-  fill: #11dbcf;
+  fill: var(--pantone-c);
 }
