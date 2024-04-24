@@ -804,14 +804,14 @@ section {
   background-size: 300px auto;
   background-repeat: repeat-x;
   background-position: center;
-  animation: slide 10s infinite linear;
+  animation: slide 20s infinite linear;
   opacity: 0.2;
 }
 
 .image.mirror {
   transform: scaleY(-1)  scaleX(-1);
   opacity: 0.2;
-  animation: slide2 10s infinite linear;
+  animation: slide2 20s infinite linear;
 }
 
 @keyframes slide {
