@@ -1,15 +1,15 @@
-@import url('fonts.css');
-@import url('colors.css');
+@import url("fonts.css");
+@import url("colors.css");
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: 'Regular', fallback;
+  font-family: "Regular", fallback;
   color: var(--color-black);
 }
 
 a {
-  font-family: 'Regular', fallback;
+  font-family: "Regular", fallback;
   color: var(--color-black);
   text-decoration: none;
 }
@@ -25,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Regular', fallback;
+  font-family: "Regular", fallback;
 }
 
 #main {
@@ -98,10 +98,10 @@ h6 {
 } */
 
 #header .logo img {
-  margin: 15px  15px  15px  15px;
+  margin: 15px 15px 15px 15px;
   max-height: 100px;
-  min-width: 50px; 
-  min-height: 50px; 
+  min-width: 50px;
+  min-height: 50px;
 }
 
 @media (max-width: 992px) {
@@ -158,7 +158,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: 'Regular', fallback;
+  font-family: "Regular", fallback;
   font-size: 14px;
   font-weight: 400;
   color: var(--color-black);
@@ -188,7 +188,7 @@ h6 {
 } */
 
 .navbar a:hover:before,
-.navbar li:hover>a:before,
+.navbar li:hover > a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -197,7 +197,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: var(--pantone-d);
 }
 
@@ -235,11 +235,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
-  color: var( --color-primary);
+.navbar .dropdown ul li:hover > a {
+  color: var(--color-primary);
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -251,7 +251,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -263,7 +263,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -335,8 +335,8 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
-  color: var( --color-primary);
+.navbar-mobile li:hover > a {
+  color: var(--color-primary);
 }
 
 .navbar-mobile .getstarted,
@@ -370,20 +370,18 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
-  color: var( --color-primary);
+.navbar-mobile .dropdown ul li:hover > a {
+  color: var(--color-primary);
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
-
-
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-#hero h1{
+#hero h1 {
   position: absolute;
   top: 20%;
   right: 20%;
@@ -391,7 +389,7 @@ h6 {
   color: white;
   z-index: 9999;
   font-size: 200px;
-  font-family: 'Regular', fallback;
+  font-family: "Regular", fallback;
 }
 .hero {
   overflow-x: hidden;
@@ -438,7 +436,7 @@ h6 {
 }
 
 .hero .info h2 {
-  color: var( --color-white);
+  color: var(--color-white);
   margin-bottom: 30px;
   padding-bottom: 30px;
   font-size: 56px;
@@ -471,7 +469,7 @@ h6 {
 }
 
 .hero .info .btn-contact {
-  font-family: 'Regular', fallback;
+  font-family: "Regular", fallback;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -480,7 +478,7 @@ h6 {
   border-radius: 50px;
   transition: 0.5s;
   margin: 10px;
-  color: var( --color-white);
+  color: var(--color-white);
   border: 2px solid var(--color-okosBlue);
 }
 
@@ -584,7 +582,8 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/bg-1.jpg") fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/bg-1.jpg") fixed center center;
   background-size: cover;
   padding: 80px 0;
 }
@@ -600,7 +599,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: 'Regular', fallback;
+  font-family: "Regular", fallback;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -633,8 +632,6 @@ section {
   }
 }
 
-
-
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
@@ -655,7 +652,6 @@ section {
   color: var(--color-black);
 }
 
-
 /*--------------------------------------------------------------
 #  scrollbar custom 
 --------------------------------------------------------------*/
@@ -666,7 +662,6 @@ section {
 /* Track */
 ::-webkit-scrollbar-track {
   background: var(--color-white);
-
 }
 ::-webkit-scrollbar-corner {
   background: var(--color-white);
@@ -680,7 +675,6 @@ section {
 /* ::-webkit-scrollbar-thumb:hover {
   background: var(--color-black) ; 
 } */
-
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -715,7 +709,7 @@ section {
   visibility: visible;
   opacity: 1;
 } */
- 
+
 #back-to-top {
   position: fixed;
   right: 25px;
@@ -723,7 +717,7 @@ section {
   z-index: 10000;
   opacity: 0;
   visibility: hidden;
-  overflow: hidden
+  overflow: hidden;
 }
 
 #back-to-top .btt-inner {
@@ -733,20 +727,20 @@ section {
   -webkit-transform: translateY(100%);
   -moz-transform: translateY(100%);
   transform: translateY(100%);
-  -webkit-transition: all .35s cubic-bezier(.72,.1,0,.99);
-  -moz-transition: all .35s cubic-bezier(.72,.1,0,.99);
-  transition: all .35s cubic-bezier(.72,.1,0,.99)
+  -webkit-transition: all 0.35s cubic-bezier(0.72, 0.1, 0, 0.99);
+  -moz-transition: all 0.35s cubic-bezier(0.72, 0.1, 0, 0.99);
+  transition: all 0.35s cubic-bezier(0.72, 0.1, 0, 0.99);
 }
 
 #back-to-top .btt-icon {
-  font-size: 30px
+  font-size: 30px;
 }
 
 #back-to-top .btt-icon:last-of-type {
   position: absolute;
   top: 100%;
   text-align: center;
-  left: 1px
+  left: 1px;
 }
 
 #back-to-top .btt-text {
@@ -756,15 +750,15 @@ section {
   transform: rotate(-90deg);
   margin: 12px 0 18px;
   font-size: 16px;
-  font-family: 'Regular', fallback;
+  font-family: "Regular", fallback;
 }
 
 #back-to-top.on {
   opacity: 1;
   visibility: visible;
-  -webkit-transition: opacity .3s ease;
-  -moz-transition: opacity .3s ease;
-  transition: opacity .3s ease;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 #back-to-top.on .btt-inner {
@@ -776,7 +770,7 @@ section {
 #back-to-top:hover .btt-inner {
   -webkit-transform: translateY(-40px);
   -moz-transform: translateY(-40px);
-  transform: translateY(-40px)
+  transform: translateY(-40px);
 }
 
 .icon-arrows-slim-up:before {
@@ -794,3 +788,46 @@ section {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/didot/isotipoPng.png");
+  background-size: 300px auto;
+  background-repeat: repeat-x;
+  background-position: center;
+  animation: slide 10s infinite linear;
+  opacity: 0.4;
+}
+
+.image.mirror {
+  transform: scaleY(-1)  scaleX(-1);
+  opacity: 0.4;
+  animation: slide2 10s infinite linear;
+}
+
+@keyframes slide {
+  from {
+    background-position-x: 100%;
+  }
+  to {
+    background-position-x: -100%;
+  }
+}
+@keyframes slide2 {
+  from {
+    background-position-x: -100%;
+  }
+  to {
+    background-position-x: 100%;
+  }
+}
+
