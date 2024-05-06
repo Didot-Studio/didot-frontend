@@ -449,9 +449,7 @@ h6 {
   color: var(--color-white);
   font-family: "Regular", fallback;
   font-weight: 600;
-  opacity: 0.6;
-  /* transition: all 0.3s ease-in-out; */
-  /* transform: translate(-50%, -50%); */
+  /* opacity: 0.6; */
 }
 
 /* Mobile devices (portrait and landscape) */
