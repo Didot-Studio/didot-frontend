@@ -28,6 +28,7 @@ h3,h5{
   font-family: "Regular", fallback;
   line-height: 1.5;
   padding-left: 25px !important;
+  padding-right: 25px !important;
 }
 .about p {
   text-align: center;
