@@ -282,9 +282,10 @@
         Accept: "application/json",
       },
     })
-      .then((response) => {
+    .then((response) => response.json()) // Parse the response body as JSON
+    .then((data) => {
         form.querySelector(".loading").classList.remove("d-block");
-        if (response.ok) {
+        if (data.ok) {
           form.querySelector(".sent-message").classList.add("d-block");
           form.reset();
         } else {
