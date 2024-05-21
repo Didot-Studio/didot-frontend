@@ -284,17 +284,16 @@
     })
     .then((response) => response.json()) // Parse the response body as JSON
     .then((data) => {
+      // Check if data only contains the 'ok' property
+      if (data.ok) {
+        form.querySelector(".sent-message").classList.add("d-block");
         form.querySelector(".loading").classList.remove("d-block");
-        if (data.ok) {
-          form.querySelector(".sent-message").classList.add("d-block");
-          form.reset();
-        } else {
-          displayError(form, "Oops! There was a problem in your form");
-        }
-      })
-      .catch((error) => {
-        displayError(form, error);
-      });
+        form.reset();
+      } else {
+        // Display the entire data object in the error message
+        displayError(form, "Error: " + JSON.stringify(data));
+      }
+    })
   }
 
   form.addEventListener("submit", handleSubmit);
