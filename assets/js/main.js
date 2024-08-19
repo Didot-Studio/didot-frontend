@@ -265,42 +265,43 @@
    * Form
    */
   var form = document.getElementById("my-form");
+  if (form) {
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
 
-  async function handleSubmit(event) {
-    event.preventDefault();
-    var status = document.getElementById("my-form-status");
-    var data = new FormData(event.target);
+      form.querySelector(".loading").classList.add("d-block");
+      form.querySelector(".error-message").classList.remove("d-block");
+      form.querySelector(".sent-message").classList.remove("d-block");
 
-    form.querySelector(".loading").classList.add("d-block");
-    form.querySelector(".error-message").classList.remove("d-block");
-    form.querySelector(".sent-message").classList.remove("d-block");
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+          Accept: "application/json",
+        },
+      })
+        .then((response) => response.json()) // Parse the response body as JSON
+        .then((data) => {
+          // Check if data only contains the 'ok' property
+          if (data.ok) {
+            form.querySelector(".sent-message").classList.add("d-block");
+            form.querySelector(".loading").classList.remove("d-block");
+            form.reset();
+          } else {
+            // Display the entire data object in the error message
+            displayError(form, "Error: " + JSON.stringify(data));
+          }
+        });
+    }
 
-    fetch(event.target.action, {
-      method: form.method,
-      body: data,
-      headers: {
-        Accept: "application/json",
-      },
-    })
-    .then((response) => response.json()) // Parse the response body as JSON
-    .then((data) => {
-      // Check if data only contains the 'ok' property
-      if (data.ok) {
-        form.querySelector(".sent-message").classList.add("d-block");
-        form.querySelector(".loading").classList.remove("d-block");
-        form.reset();
-      } else {
-        // Display the entire data object in the error message
-        displayError(form, "Error: " + JSON.stringify(data));
-      }
-    })
-  }
+    form.addEventListener("submit", handleSubmit);
 
-  form.addEventListener("submit", handleSubmit);
-
-  function displayError(thisForm, error) {
-    thisForm.querySelector(".loading").classList.remove("d-block");
-    thisForm.querySelector(".error-message").innerHTML = error;
-    thisForm.querySelector(".error-message").classList.add("d-block");
+    function displayError(thisForm, error) {
+      thisForm.querySelector(".loading").classList.remove("d-block");
+      thisForm.querySelector(".error-message").innerHTML = error;
+      thisForm.querySelector(".error-message").classList.add("d-block");
+    }
   }
 })();
