@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9
+            https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+  <loc>https://didot.com.ar/</loc>
+  <lastmod>2024-08-19T18:12:05+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://didot.com.ar/index.html</loc>
+  <lastmod>2024-08-19T18:12:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://didot.com.ar/portfolio.html</loc>
+  <lastmod>2024-08-19T18:12:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://didot.com.ar/nosotros.html</loc>
+  <lastmod>2024-08-19T18:12:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://didot.com.ar/servicios.html</loc>
+  <lastmod>2024-08-19T18:12:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://didot.com.ar/portfolio-detalle-a.html</loc>
+  <lastmod>2024-08-19T18:12:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://didot.com.ar/portfolio-detalle-b.html</loc>
+  <lastmod>2024-08-19T18:12:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://didot.com.ar/portfolio-detalle-c.html</loc>
+  <lastmod>2024-08-19T18:12:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://didot.com.ar/portfolio-detalle-d.html</loc>
+  <lastmod>2024-08-19T18:12:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
